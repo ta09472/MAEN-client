@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 const SearchStyled = styled.input`
   border-radius: 5px;
-  border: 1px solid #dcdde1;
+  border: none;
   height: 2em;
   width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   outline: none;
-  font-size: 1em;
+  font-size: 1.1em;
+  padding-left: 1em;
 `;
 
 export default SearchStyled;

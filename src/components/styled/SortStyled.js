@@ -8,6 +8,10 @@ const SortStyled = styled.button`
     color: #dcdde1;
     border-bottom: 1px solid #2f3640;
   }
+  &:active {
+    color: #2f3640;
+    border-bottom: 1px solid #2f3640;
+  }
 `;
 
 export default SortStyled;

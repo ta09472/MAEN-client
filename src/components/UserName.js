@@ -1,7 +1,7 @@
 import React from "react";
 
 const UserName = () => {
-  return <div>유저이름</div>;
+  return <p>유저이름</p>;
 };
 
 export default UserName;

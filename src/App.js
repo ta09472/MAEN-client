@@ -1,7 +1,9 @@
-import Header from "./components/Header";
-import ContentBlock from "./components/ContentBlock";
 import GlobalStyled from "./components/styled/GlobalStyled";
 import GlobalWrapper from "./components/styled/GlobalWrapper";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Channel from "./components/Channel";
 
 function App() {
   return (
@@ -9,7 +11,10 @@ function App() {
       <GlobalStyled />
       <div className="App">
         <Header />
-        <ContentBlock />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/channel" element={<Channel />} />
+        </Routes>
       </div>
     </GlobalWrapper>
   );

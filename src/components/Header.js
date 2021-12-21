@@ -3,13 +3,16 @@ import HeaderStyled from "./styled/HeaderStyled";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserBlock from "./UserBlock";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <HeaderStyled>
       <Logo />
       <Search />
-      <UserBlock />
+      <Link to="/channel">
+        <UserBlock />
+      </Link>
     </HeaderStyled>
   );
 };
