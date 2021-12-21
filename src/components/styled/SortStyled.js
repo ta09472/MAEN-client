@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 const SortStyled = styled.button`
   border: none;
-  border-bottom: 1px solid #2f3640;
-  padding: 5px;
-  margin: 5px;
+  margin: 0.5em;
+  padding: 0.5em;
   &:hover {
-    background: red;
+    color: #dcdde1;
+    border-bottom: 1px solid #2f3640;
   }
 `;
 

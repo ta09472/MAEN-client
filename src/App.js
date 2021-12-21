@@ -1,11 +1,17 @@
 import Header from "./components/Header";
 import ContentBlock from "./components/ContentBlock";
+import GlobalStyled from "./components/styled/GlobalStyled";
+import GlobalWrapper from "./components/styled/GlobalWrapper";
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <ContentBlock />
-    </div>
+    <GlobalWrapper>
+      <GlobalStyled />
+      <div className="App">
+        <Header />
+        <ContentBlock />
+      </div>
+    </GlobalWrapper>
   );
 }
 

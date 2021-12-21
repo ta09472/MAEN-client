@@ -1,13 +1,16 @@
 import React from "react";
+import SequenceStyled from "./styled/SequenceStyled";
+import SequenceBlockStyled from "./styled/SequenceBlockStyled";
 
 const Sequence = () => {
   return (
-    <div>
-      <button>Morning</button>
-      <button>Afternoon</button>
-      <button>Evening</button>
-      <button>Night</button>
-    </div>
+    <SequenceBlockStyled>
+      <SequenceStyled>All</SequenceStyled>
+      <SequenceStyled>Morning</SequenceStyled>
+      <SequenceStyled>Afternoon</SequenceStyled>
+      <SequenceStyled>Evening</SequenceStyled>
+      <SequenceStyled>Night</SequenceStyled>
+    </SequenceBlockStyled>
   );
 };
 
