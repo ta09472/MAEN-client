@@ -1,22 +1,26 @@
-import GlobalStyled from "./components/styled/GlobalStyled";
-import GlobalWrapper from "./components/styled/GlobalWrapper";
+import GlobalStyled from "./components/styled/commonStyled/GlobalStyled";
+import GlobalWrapper from "./components/styled/commonStyled/GlobalWrapper";
+
+import Header from "./components/common/Header";
+import Main from "./components/main/Main";
+import Channel from "./components/channel/Channel";
+import Modal from "react-modal";
 import { Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Channel from "./components/Channel";
 
 function App() {
   return (
-    <GlobalWrapper>
+    <>
       <GlobalStyled />
       <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/channel" element={<Channel />} />
-        </Routes>
+        <GlobalWrapper>
+          <Header></Header>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/channel" element={<Channel />} />
+          </Routes>
+        </GlobalWrapper>
       </div>
-    </GlobalWrapper>
+    </>
   );
 }
 
