@@ -1,9 +1,14 @@
 import React from "react";
-import RecommandationUserStyled from "../styled/commonStyled/RecommandationUserStyled";
+import RecommandationWrapper from "../styled/commonStyled/RecommandationWrapper";
+import RecommandTextWrapper from "../styled/commonStyled/RecommandTextWrapper";
+import RecommandationUser from "./RecommandationUser";
 
 const RecommnadationUser = () => {
   return (
-    <RecommandationUserStyled>This is UserRecommand</RecommandationUserStyled>
+    <RecommandationWrapper>
+      <RecommandTextWrapper>Recommandation Users</RecommandTextWrapper>
+      <RecommandationUser />
+    </RecommandationWrapper>
   );
 };
 

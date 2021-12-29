@@ -6,17 +6,20 @@ import Content from "../main/Content";
 import Sort from "../main/Sort";
 import MainWrapper from "../styled/commonStyled/MainWrapper";
 import ContentWrapper from "../styled/mainStyled/ContentWrapper";
+import HomeWrapper from "../styled/mainStyled/HomeWrapper";
 
 const Main = () => {
   return (
-    <MainWrapper>
+    <HomeWrapper>
       <SideNav />
-      <ContentWrapper>
-        <Sort />
-        <Content />
-      </ContentWrapper>
-      <Upload />
-    </MainWrapper>
+      <MainWrapper>
+        <ContentWrapper>
+          <Sort />
+          <Content />
+        </ContentWrapper>
+        <Upload />
+      </MainWrapper>
+    </HomeWrapper>
   );
 };
 

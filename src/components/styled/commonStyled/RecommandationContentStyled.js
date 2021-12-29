@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 const RecommandationTagStyled = styled.div`
   display: flex;
-  height: 15em;
-  background-color: green;
+  flex-direction: column;
+  overflow: hidden;
+  font-weight: bold;
+  margin-top: 1.5em;
 `;
 
 export default RecommandationTagStyled;

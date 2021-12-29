@@ -4,7 +4,7 @@ const SortStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
+
   min-height: 3em;
   width: 100%;
 `;

@@ -4,7 +4,6 @@ const PostWrapperStyled = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: skyblue;
   padding: 1em;
 `;
 

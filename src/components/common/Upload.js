@@ -1,13 +1,13 @@
 import React from "react";
 import UploadStyled from "../styled/commonStyled/UploadStyled";
 import UploadButtonStyled from "../styled/commonStyled/UploadButtonStyled";
-import { MdAdd } from "react-icons/md";
+import { MdAddCircle } from "react-icons/md";
 
 const Upload = () => {
   return (
     <UploadStyled>
       <UploadButtonStyled>
-        <MdAdd />
+        <MdAddCircle />
       </UploadButtonStyled>
     </UploadStyled>
   );
