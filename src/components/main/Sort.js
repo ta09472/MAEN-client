@@ -10,14 +10,18 @@ import Recent from "./Recent";
 const Sort = () => {
   return (
     <SortStyled>
-      <ButtonStyled>
-        <MdTrendingUp />
-        인기
-      </ButtonStyled>
-      <ButtonStyled>
-        <MdAvTimer />
-        최신
-      </ButtonStyled>
+      <Link to="/">
+        <ButtonStyled>
+          <MdTrendingUp />
+          인기
+        </ButtonStyled>
+      </Link>
+      <Link to="/recent">
+        <ButtonStyled>
+          <MdAvTimer />
+          최신
+        </ButtonStyled>
+      </Link>
     </SortStyled>
   );
 };

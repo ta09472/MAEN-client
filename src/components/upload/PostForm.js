@@ -6,14 +6,13 @@ import Uploader from "./Uploader";
 
 const PostForm = () => {
   return (
-    <div>
-      MyComponent
+    <PostFormStyled>
       <Uploader />
       <InputWrapper>
         <Input />
         <Input />
       </InputWrapper>
-    </div>
+    </PostFormStyled>
   );
 };
 
