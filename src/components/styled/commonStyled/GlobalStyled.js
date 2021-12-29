@@ -25,6 +25,9 @@ h2 {
 p {
   margin:0.2em;
 }
+html {
+  z-index: 1;
+}
 `;
 
 export default GlobalStyled;

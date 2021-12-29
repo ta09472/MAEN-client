@@ -2,15 +2,18 @@ import React from "react";
 import UploadStyled from "../styled/commonStyled/UploadStyled";
 import UploadButtonStyled from "../styled/commonStyled/UploadButtonStyled";
 import { MdAddCircle } from "react-icons/md";
+import { Route, Routes, Link } from "react-router-dom";
 
-const Upload = () => {
+const UploadButton = () => {
   return (
     <UploadStyled>
       <UploadButtonStyled>
-        <MdAddCircle />
+        <Link to="/upload">
+          <MdAddCircle />
+        </Link>
       </UploadButtonStyled>
     </UploadStyled>
   );
 };
 
-export default Upload;
+export default UploadButton;

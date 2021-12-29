@@ -4,6 +4,7 @@ import GlobalWrapper from "./components/styled/commonStyled/GlobalWrapper";
 import Header from "./components/common/Header";
 import Main from "./components/main/Main";
 import Channel from "./components/channel/Channel";
+import Upload from "./components/upload/Upload";
 import Modal from "react-modal";
 import { Route, Routes } from "react-router-dom";
 
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/channel" element={<Channel />} />
+            <Route path="/upload" element={<Upload />} />
           </Routes>
         </GlobalWrapper>
       </div>
