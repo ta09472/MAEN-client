@@ -1,12 +1,16 @@
 import React from "react";
-import UserProfile from "./UserProfile";
+import UserProfileStyled from "../styled/commonStyled/UserProfileStyled";
 import UserName from "./UserName";
 import UserBlockStlyed from "../styled/commonStyled/UserBlockStyled";
 
 const UserBlock = () => {
   return (
     <UserBlockStlyed>
-      <UserProfile />
+      <UserProfileStyled
+        src="../../public/logo192.png"
+        width="32px"
+        height="32px"
+      />
       <UserName />
     </UserBlockStlyed>
   );

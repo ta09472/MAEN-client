@@ -7,6 +7,7 @@ const SideNavStyled = styled.nav`
   height: 92vh;
   position: sticky;
   top: 5em;
+  max-width: 220px;
 `;
 
 export default SideNavStyled;

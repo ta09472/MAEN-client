@@ -6,7 +6,7 @@ import RecommandationContentStyled from "../styled/commonStyled/RecommandationCo
 const RecommnadationTag = () => {
   return (
     <RecommandationWrapper>
-      <RecommandTextWrapper>RecommnadationTag</RecommandTextWrapper>
+      <RecommandTextWrapper>Recommnad Tag</RecommandTextWrapper>
       <RecommandationContentStyled>
         <a>#Tag1</a>
         <a>#Tag2</a>
