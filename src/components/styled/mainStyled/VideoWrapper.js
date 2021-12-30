@@ -3,7 +3,8 @@ import styled from "styled-components";
 const VideoStyled = styled.video`
   width: 100%;
   height: 80%;
-  border-radius: 4px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background-color: skyblue;
 `;
 

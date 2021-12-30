@@ -10,10 +10,10 @@ import HomeWrapper from "../styled/mainStyled/HomeWrapper";
 import Upload from "../upload/Upload";
 import { Route, Routes, Link } from "react-router-dom";
 
-const Main = () => {
+const Recent = () => {
   return (
     <HomeWrapper>
-      This is Recent
+      this is recent
       <SideNav />
       <MainWrapper>
         <ContentWrapper>
@@ -26,4 +26,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Recent;

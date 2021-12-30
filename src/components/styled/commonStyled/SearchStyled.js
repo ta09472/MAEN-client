@@ -10,7 +10,6 @@ const SearchStyled = styled.input`
   align-items: center;
   outline: none;
   font-size: 1.1em;
-  padding-left: 1em;
 `;
 
 export default SearchStyled;

@@ -5,7 +5,7 @@ const SearchBoxStyled = styled.div`
   align-items: center;
   border: 1px solid #dcdde1;
   border-radius: 5px;
-  padding-left: 1em;
+  padding: 0 1em;
 `;
 
 export default SearchBoxStyled;

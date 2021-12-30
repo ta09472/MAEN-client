@@ -3,10 +3,11 @@ import GlobalWrapper from "./components/styled/commonStyled/GlobalWrapper";
 
 import Header from "./components/common/Header";
 import Main from "./components/main/Main";
+import SearchResult from "./components/search/SearchResult";
 import Channel from "./components/channel/Channel";
 import Recent from "./components/recent/Recent";
 import Upload from "./components/upload/Upload";
-import Modal from "react-modal";
+import Modal from "./components/videoModal/Modal";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -21,8 +22,10 @@ function App() {
             <Route path="/channel" element={<Channel />} />
             <Route path="/upload" element={<Upload />} />
             <Route path="/recent" element={<Recent />} />
+            <Route path="/search" element={<SearchResult />} />
           </Routes>
         </GlobalWrapper>
+        <Modal></Modal>
       </div>
     </>
   );

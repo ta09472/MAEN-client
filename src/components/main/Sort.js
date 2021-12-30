@@ -5,7 +5,7 @@ import { MdTrendingUp } from "react-icons/md";
 import { MdAvTimer } from "react-icons/md";
 import { Route, Routes, Link } from "react-router-dom";
 import Main from "./Main";
-import Recent from "./Recent";
+import Recent from "../recent/Recent";
 
 const Sort = () => {
   return (
