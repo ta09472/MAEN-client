@@ -10,7 +10,7 @@ const HeaderStyled = styled.header`
   background-color: #f5f6fa;
   height: 4em;
   min-height: 4em;
-  z-index: 10;
+  z-index: 2;
 `;
 
 export default HeaderStyled;

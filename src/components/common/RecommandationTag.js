@@ -3,7 +3,7 @@ import RecommandationWrapper from "../styled/commonStyled/RecommandationWrapper"
 import RecommandTextWrapper from "../styled/commonStyled/RecommandTextWrapper";
 import RecommandationContentStyled from "../styled/commonStyled/RecommandationContentStyled";
 
-const RecommnadationTag = () => {
+const RecommandationTag = () => {
   return (
     <RecommandationWrapper>
       <RecommandTextWrapper>Recommnad Tag</RecommandTextWrapper>
@@ -18,4 +18,4 @@ const RecommnadationTag = () => {
   );
 };
 
-export default RecommnadationTag;
+export default RecommandationTag;

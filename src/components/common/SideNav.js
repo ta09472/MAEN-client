@@ -1,14 +1,14 @@
 import React from "react";
 import SideNavStyled from "../styled/commonStyled/SideNavStyled";
-import RecommnadationUser from "../common/RecommnadationUser";
-import RecommnadationTag from "../common/RecommnadationTag";
+import RecommnadationUser from "../common/RecommandationUser";
+import RecommandationTag from "../common/RecommandationTag";
 import Footer from "../common/Footer";
 
 const SideNav = () => {
   return (
     <SideNavStyled>
       <RecommnadationUser />
-      <RecommnadationTag />
+      <RecommandationTag />
       <Footer />
     </SideNavStyled>
   );

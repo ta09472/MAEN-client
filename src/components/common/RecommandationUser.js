@@ -1,16 +1,19 @@
 import React from "react";
 import RecommandationContentStyled from "../styled/commonStyled/RecommandationContentStyled";
 import UserBlock from "./UserBlock";
+import { Link } from "react-router-dom";
 
 const RecommandationUser = () => {
   return (
     <RecommandationContentStyled>
-      <UserBlock />
-      <UserBlock />
-      <UserBlock />
-      <UserBlock />
-      <UserBlock />
-      <UserBlock />
+      <Link to="/channel">
+        <UserBlock />
+        <UserBlock />
+        <UserBlock />
+        <UserBlock />
+        <UserBlock />
+        <UserBlock />
+      </Link>
     </RecommandationContentStyled>
   );
 };

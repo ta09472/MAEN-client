@@ -3,7 +3,7 @@ import RecommandationWrapper from "../styled/commonStyled/RecommandationWrapper"
 import RecommandTextWrapper from "../styled/commonStyled/RecommandTextWrapper";
 import RecommandationUser from "./RecommandationUser";
 
-const RecommnadationUser = () => {
+const RecommandationUserWrapper = () => {
   return (
     <RecommandationWrapper>
       <RecommandTextWrapper>Recommand Users</RecommandTextWrapper>
@@ -12,4 +12,4 @@ const RecommnadationUser = () => {
   );
 };
 
-export default RecommnadationUser;
+export default RecommandationUserWrapper;
