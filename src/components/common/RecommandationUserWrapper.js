@@ -6,7 +6,7 @@ import RecommandationUser from "./RecommandationUser";
 const RecommandationUserWrapper = () => {
   return (
     <RecommandationWrapper>
-      <RecommandTextWrapper>Recommand Users</RecommandTextWrapper>
+      <RecommandTextWrapper></RecommandTextWrapper>
       <RecommandationUser />
     </RecommandationWrapper>
   );

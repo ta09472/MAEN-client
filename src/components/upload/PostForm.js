@@ -1,18 +1,24 @@
 import React from "react";
 import PostFormStyled from "../styled/uploadStyled/PostFormStyled";
 import InputWrapper from "../styled/uploadStyled/InputWrapper";
-import Input from "../styled/uploadStyled/Input";
+import DescriptionInput from "../styled/uploadStyled/DescriptionInput";
+import CaptionInput from "../styled/uploadStyled/CaptionInput";
 import Uploader from "./Uploader";
 
 const PostForm = () => {
   return (
-    <PostFormStyled>
-      <Uploader />
+    <>
+      <PostFormStyled>
+        <h3>Upload Your Day</h3>
+        <Uploader />
+      </PostFormStyled>
       <InputWrapper>
-        <Input />
-        <Input />
+        <p>Caption</p>
+        <CaptionInput />
+        <p>Description</p>
+        <DescriptionInput />
       </InputWrapper>
-    </PostFormStyled>
+    </>
   );
 };
 

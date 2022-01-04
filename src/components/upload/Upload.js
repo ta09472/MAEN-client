@@ -9,9 +9,6 @@ const Upload = () => {
     <>
       <UploadWrapper>
         <PostForm />
-        <PostForm />
-        <PostForm />
-        <PostForm />
       </UploadWrapper>
       <ButtonWrapper>
         <UploadButtonStyled>upload</UploadButtonStyled>
