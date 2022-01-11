@@ -5,11 +5,9 @@ const SigninWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30em;
-  height: 40em;
+  width: 26em;
+  height: 35em;
   border-radius: 8px;
-  border: 1px solid #dcdde1;
-  margin-top: 7em;
 `;
 
 export default SigninWrapper;

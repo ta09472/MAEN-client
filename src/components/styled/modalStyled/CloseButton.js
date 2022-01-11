@@ -10,7 +10,7 @@ const CloseButton = styled.button`
   margin: 0.5em;
 
   &:hover {
-    font-size: 2.09em;
+    font-size: 2.05em;
     transition: 500ms;
   }
 `;

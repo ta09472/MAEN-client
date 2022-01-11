@@ -11,7 +11,7 @@ const Upload = () => {
         <PostForm />
       </UploadWrapper>
       <ButtonWrapper>
-        <UploadButtonStyled>upload</UploadButtonStyled>
+        <UploadButtonStyled type="submit">upload</UploadButtonStyled>
       </ButtonWrapper>
     </>
   );

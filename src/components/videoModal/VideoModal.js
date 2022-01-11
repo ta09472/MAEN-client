@@ -8,23 +8,24 @@ import { MdClose } from "react-icons/md";
 import VideoContent from "../videoModal/VideoContent";
 import SideContent from "../videoModal/SideContent";
 
-const VideoModal = ({ isOpened, children }) => {
+const VideoModal = ({ isOpened, children, onClose }) => {
   if (!isOpened) {
     return null;
   }
   return createPortal(
     <ModalWrapper>
       <OverlayStyled>
-        <CloseButton>
+        <CloseButton onClick={onClose}>
           <MdClose />
         </CloseButton>
-        <ModalStyled>
-          <VideoContentWrapper>
-            <VideoContent />
-          </VideoContentWrapper>
-          <SideContent />
-        </ModalStyled>
       </OverlayStyled>
+
+      <ModalStyled>
+        <VideoContentWrapper>
+          <VideoContent />
+        </VideoContentWrapper>
+        <SideContent />
+      </ModalStyled>
     </ModalWrapper>,
     document.getElementById("modal")
   );

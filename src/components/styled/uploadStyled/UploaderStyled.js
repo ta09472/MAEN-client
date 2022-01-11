@@ -7,7 +7,13 @@ const UploaderStyled = styled.div`
   width: 18em;
   height: 28em;
   align-items: center;
+  align-content: center;
   justify-content: center;
+  transition: 500ms;
+  &:hover {
+    border: 2px dashed #e84118;
+    transition: 500ms;
+  }
 `;
 
 export default UploaderStyled;

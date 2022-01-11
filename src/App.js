@@ -7,10 +7,11 @@ import SearchResult from "./components/search/SearchResult";
 import Channel from "./components/channel/Channel";
 import Recent from "./components/recent/Recent";
 import Upload from "./components/upload/Upload";
-import SignIn from "./components/signin/SignIn";
-import VideoModal from "./components/videoModal/VideoModal";
-import { Route, Routes } from "react-router-dom";
 
+import VideoModal from "./components/videoModal/VideoModal";
+import NotFound from "./components/common/NotFound";
+import { Route, Routes } from "react-router-dom";
+import Test from "./Test";
 function App() {
   return (
     <>
@@ -20,11 +21,13 @@ function App() {
           <Header></Header>
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="/channel" element={<Channel />} />
-            <Route path="/upload" element={<Upload />} />
-            <Route path="/recent" element={<Recent />} />
-            <Route path="/search" element={<SearchResult />} />
-            <Route path="/signin" element={<SignIn />} />
+            <Route path="channel" element={<Channel />} />
+            <Route path="upload" element={<Upload />} />
+            <Route path="recent" element={<Recent />} />
+            <Route path="search" element={<SearchResult />} />
+
+            <Route path="*" element={<NotFound />} />
+            <Route path="test" element={<Test />} />
           </Routes>
         </GlobalWrapper>
       </div>
