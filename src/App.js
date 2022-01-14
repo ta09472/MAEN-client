@@ -12,25 +12,30 @@ import VideoModal from "./components/videoModal/VideoModal";
 import NotFound from "./components/common/NotFound";
 import { Route, Routes } from "react-router-dom";
 import Test from "./Test";
+import { store } from "./redux/store";
+import { Provider } from "react-redux";
+
 function App() {
   return (
     <>
-      <GlobalStyled />
-      <div className="App">
-        <GlobalWrapper>
-          <Header></Header>
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="channel" element={<Channel />} />
-            <Route path="upload" element={<Upload />} />
-            <Route path="recent" element={<Recent />} />
-            <Route path="search" element={<SearchResult />} />
+      <Provider store={store}>
+        <GlobalStyled />
+        <div className="App">
+          <GlobalWrapper>
+            <Header></Header>
+            <Routes>
+              <Route path="/" element={<Main />} />
+              <Route path="channel" element={<Channel />} />
+              <Route path="upload" element={<Upload />} />
+              <Route path="recent" element={<Recent />} />
+              <Route path="search" element={<SearchResult />} />
 
-            <Route path="*" element={<NotFound />} />
-            <Route path="test" element={<Test />} />
-          </Routes>
-        </GlobalWrapper>
-      </div>
+              <Route path="*" element={<NotFound />} />
+              <Route path="test" element={<Test />} />
+            </Routes>
+          </GlobalWrapper>
+        </div>
+      </Provider>
     </>
   );
 }
