@@ -11,9 +11,11 @@ import Upload from "./components/upload/Upload";
 import VideoModal from "./components/videoModal/VideoModal";
 import NotFound from "./components/common/NotFound";
 import { Route, Routes } from "react-router-dom";
-import Test from "./Test";
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
+
+import Test from "./Test";
+import UploadTest from "./components/uploadTest/UploadContainer";
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
         <GlobalStyled />
         <div className="App">
           <GlobalWrapper>
-            <Header></Header>
+            <Header />
             <Routes>
               <Route path="/" element={<Main />} />
               <Route path="channel" element={<Channel />} />
@@ -32,6 +34,7 @@ function App() {
 
               <Route path="*" element={<NotFound />} />
               <Route path="test" element={<Test />} />
+              <Route path="uploadtest" element={<UploadTest />} />
             </Routes>
           </GlobalWrapper>
         </div>

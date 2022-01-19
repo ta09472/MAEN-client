@@ -8,10 +8,6 @@ const LikeStyled = styled.button`
   font-size: 1.4em;
   transition: 300ms;
   color: #e84118;
-  &:hover {
-    border-bottom: 1px solid #e84118;
-    transition: 500ms;
-  }
 `;
 
 export default LikeStyled;

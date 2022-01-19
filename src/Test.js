@@ -23,6 +23,7 @@ const Test = () => {
   const postList = posts.map((post) => <li key={post.name}>{post.name}</li>);
   return (
     <div>
+      Post
       <ul>{postList}</ul>
       <input
         type="text"

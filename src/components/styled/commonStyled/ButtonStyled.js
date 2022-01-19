@@ -5,7 +5,6 @@ const ButtonStyled = styled.a`
   align-items: center;
   justify-content: space-around;
   border: none;
-  border-bottom: 2px solid black;
   width: 5em;
   margin: 0 0.5em;
   font-size: 1.4em;

@@ -13,7 +13,6 @@ import { Route, Routes, Link } from "react-router-dom";
 const Recent = () => {
   return (
     <HomeWrapper>
-      this is recent
       <SideNav />
       <MainWrapper>
         <ContentWrapper>

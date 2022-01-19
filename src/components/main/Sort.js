@@ -3,25 +3,31 @@ import SortStyled from "../styled/mainStyled/SortStyled";
 import ButtonStyled from "../styled/commonStyled/ButtonStyled";
 import { MdTrendingUp } from "react-icons/md";
 import { MdAvTimer } from "react-icons/md";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes, NavLink } from "react-router-dom";
 import Main from "./Main";
 import Recent from "../recent/Recent";
+
+const navLinkStyled = ({ isActive }) => {
+  return {
+    borderBottom: isActive ? "2px solid black" : "white",
+  };
+};
 
 const Sort = () => {
   return (
     <SortStyled>
-      <Link to="/">
+      <NavLink style={navLinkStyled} to="/">
         <ButtonStyled>
           <MdTrendingUp />
           인기
         </ButtonStyled>
-      </Link>
-      <Link to="/recent">
+      </NavLink>
+      <NavLink style={navLinkStyled} to="/recent">
         <ButtonStyled>
           <MdAvTimer />
           최신
         </ButtonStyled>
-      </Link>
+      </NavLink>
     </SortStyled>
   );
 };

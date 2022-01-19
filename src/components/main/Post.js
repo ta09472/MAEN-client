@@ -4,8 +4,9 @@ import VideoWrapper from "../styled/mainStyled/VideoWrapper";
 import UserBlock from "../common/UserBlock";
 import VideoModal from "../videoModal/VideoModal";
 import Modal from "react-modal";
+import ContentInfo from "../videoModal/ContentInfo";
 
-const Post = ({ data }) => {
+const Post = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -15,8 +16,9 @@ const Post = ({ data }) => {
     <>
       <PostStyled onClick={toggleModal}>
         <VideoWrapper />
+
         <UserBlock />
-        {data}
+        <ContentInfo />
       </PostStyled>
       <VideoModal isOpened={isModalOpen} onClose={toggleModal}></VideoModal>
     </>
