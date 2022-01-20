@@ -13,22 +13,16 @@ import { useSelector, useDispatch } from "react-redux";
 import { uploadPost } from "../../redux/module/upload";
 
 const UploadTest = () => {
+  const initialValues = useSelector((state) => state.upload);
   const dispatch = useDispatch();
-  const initialValues = {
-    id: 1,
-    user_id: "beomsu",
-    caption: "",
-    description: "",
-    video: "",
-  };
 
   const validationSchema = Yup.object({
-    caption: Yup.string().required("required"),
+    tags: Yup.string().required("required"),
     description: Yup.string().required("required"),
   });
 
   const onSubmit = (values) => {
-    console.log(values);
+    dispatch(uploadPost(values));
   };
 
   return (
@@ -57,8 +51,8 @@ const UploadTest = () => {
               <UploadControl
                 control="input"
                 type="text"
-                label="Caption"
-                name="caption"
+                label="tags"
+                name="tags"
               />
               <UploadControl
                 control="textarea"

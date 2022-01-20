@@ -15,6 +15,7 @@ export const uploadData = (input) => {
   axios.post("http://localhost:8080/api/hello/", {
     name: input,
   });
+
   return {
     type: UPLOAD_DATA,
     payload: input,
@@ -42,6 +43,7 @@ export default function reducer(state = initialState, action) {
         ...state,
         input: action.payload,
       };
+
     default:
       return state;
   }
